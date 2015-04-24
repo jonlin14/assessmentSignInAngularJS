@@ -6,8 +6,17 @@
     <link rel="stylesheet" href="css/styles.css">
   </head>
   <body>
-
+    <div class="container">
+      <div class="col-md-6" ng-controller="studentsCtrl">
+        <ul>
+          <li ng-repeat = 'item in students'>
+            {{ item.name }} 
+          </li>
+        </ul>
+      </div>
+    </div>
   </body>
   <script src="lib/angular.js"></script>
   <script src="app.js"></script>
+  <Script src="controllers/studentsCtrl.js"></script>
 </html>
