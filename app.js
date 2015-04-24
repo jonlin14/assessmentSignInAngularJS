@@ -11,5 +11,10 @@ myApp.config(function($stateProvider){
     templateUrl: "partials/signIn.html",
     controller: "studentsCtrl"
   });
+  $stateProvider.state("presence", {
+    url:"presence",
+    templateUrl: "partials/presence.html",
+    controller: "studentsCtrl"
+  });
 
 })
