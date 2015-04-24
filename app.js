@@ -14,7 +14,7 @@ myApp.config(function($stateProvider){
   $stateProvider.state("presence", {
     url:"presence",
     templateUrl: "partials/presence.html",
-    controller: "studentsCtrl"
+    controller: "studentListCtrl"
   });
 
 })

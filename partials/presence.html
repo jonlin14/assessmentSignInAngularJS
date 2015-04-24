@@ -1,3 +1,16 @@
-<div class="col-md-6">
-  <p>This is the presence page</p>
+<div ng-show="(students|filter:{present:true}).length > 0">
+  <h2> Here </h2>
+    <ul>
+      <li ng-repeat="item in students | filter:{present:true}">
+        {{ item.name }}
+      </li>
+    </ul>
+</div>
+<div class = "col-md-6">
+    <h2> Not Here </h2>
+    <ul>
+      <li ng-repeat="item in students">
+        <span ng-show="!item.present">{{ item.name }}</span>
+      </li>
+    </ul>
 </div>
