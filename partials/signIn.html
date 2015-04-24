@@ -1,0 +1,10 @@
+<div class="container">
+  <div class="col-md-6" ng-controller="studentsCtrl">
+    <ul>
+      <li ng-repeat = 'item in students'>
+        {{ item.name }} <span ng-hide = "item.present"><button class="btn btn-danger" ng-click="item.present = true">Sign In</button></span>
+                        <span ng-show = "item.present"><button class="btn btn-success" ng-click="item.present = false">Signing Out</button></span>
+      </li>
+    </ul>
+  </div>
+</div>
